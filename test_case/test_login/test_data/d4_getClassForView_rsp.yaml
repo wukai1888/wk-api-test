@@ -1,0 +1,466 @@
+encoding: UTF-8
+status_code: '200'
+status_desc: ''
+header:
+  Content-Type: application/json;charset=UTF-8
+  Transfer-Encoding: chunked
+cookies: {}
+body:
+  code: 20000
+  msg: 操作成功
+  data:
+    total: 45
+    totalPage: 1
+    pageSize: 100
+    list:
+    - classId: 373
+      className: 兰戎001班级
+      classCode: LR_001班
+      startDate: 2021-03-31T00:00:00.000+0800
+      graduateDate: 2021-05-31T00:00:00.000+0800
+      adminId:
+      teacherName: lanrong001
+      status:
+      type:
+      mark: ''
+    - classId: 392
+      className: 兰戎001班级
+      classCode: LR_001班
+      startDate: 2021-03-31T00:00:00.000+0800
+      graduateDate: 2021-05-31T00:00:00.000+0800
+      adminId:
+      teacherName: lanrong001
+      status:
+      type:
+      mark: ''
+    - classId: 388
+      className: 张001test班级
+      classCode: zr班级
+      startDate: 2021-03-28T00:00:00.000+0800
+      graduateDate: 2021-03-28T00:00:00.000+0800
+      adminId:
+      teacherName: 张冉
+      status:
+      type:
+      mark: ''
+    - classId: 371
+      className: 2020A
+      classCode: 2020A
+      startDate: 2021-03-27T00:00:00.000+0800
+      graduateDate: 2021-03-31T00:00:00.000+0800
+      adminId:
+      teacherName: 翠花
+      status:
+      type:
+      mark: ''
+    - classId: 362
+      className: 阿斯蒂芬
+      classCode: ASDFSD
+      startDate: 2021-03-27T00:00:00.000+0800
+      graduateDate: 2021-03-31T00:00:00.000+0800
+      adminId:
+      teacherName: 肖强
+      status:
+      type:
+      mark: ''
+    - classId: 363
+      className: 阿斯蒂芬
+      classCode: ASDFSD
+      startDate: 2021-03-27T00:00:00.000+0800
+      graduateDate: 2021-03-31T00:00:00.000+0800
+      adminId:
+      teacherName: 肖强
+      status:
+      type:
+      mark: ''
+    - classId: 364
+      className: 阿斯蒂芬
+      classCode: ASDFSD
+      startDate: 2021-03-27T00:00:00.000+0800
+      graduateDate: 2021-03-31T00:00:00.000+0800
+      adminId:
+      teacherName: 肖强
+      status:
+      type:
+      mark: ''
+    - classId: 368
+      className: 果芽123
+      classCode: GY123
+      startDate: 2021-03-27T00:00:00.000+0800
+      graduateDate: 2021-03-30T00:00:00.000+0800
+      adminId:
+      teacherName: 肖强
+      status:
+      type:
+      mark: ''
+    - classId: 365
+      className: 阿斯蒂芬
+      classCode: ASDFSD
+      startDate: 2021-03-27T00:00:00.000+0800
+      graduateDate: 2021-03-31T00:00:00.000+0800
+      adminId:
+      teacherName: 肖强
+      status:
+      type:
+      mark: ''
+    - classId: 366
+      className: 阿斯蒂芬
+      classCode: ASDFSD
+      startDate: 2021-03-27T00:00:00.000+0800
+      graduateDate: 2021-03-31T00:00:00.000+0800
+      adminId:
+      teacherName: 肖强
+      status:
+      type:
+      mark: ''
+    - classId: 367
+      className: 阿斯蒂芬
+      classCode: ASDFSD
+      startDate: 2021-03-27T00:00:00.000+0800
+      graduateDate: 2021-03-31T00:00:00.000+0800
+      adminId:
+      teacherName: 肖强
+      status:
+      type:
+      mark: ''
+    - classId: 372
+      className: zkx0327class
+      classCode: 0327class
+      startDate: 2021-03-27T00:00:00.000+0800
+      graduateDate: 2021-03-28T00:00:00.000+0800
+      adminId:
+      teacherName: 张可欣测试号
+      status:
+      type:
+      mark: ''
+    - classId: 369
+      className: 美女一班
+      classCode: MVYB
+      startDate: 2021-03-27T00:00:00.000+0800
+      graduateDate: 2021-03-31T00:00:00.000+0800
+      adminId:
+      teacherName: 吴茁玲测试号
+      status:
+      type:
+      mark: ''
+    - classId: 389
+      className: 黄曼班级
+      classCode: hmclass
+      startDate: 2021-03-27T00:00:00.000+0800
+      graduateDate: 2021-03-27T00:00:00.000+0800
+      adminId:
+      teacherName: hm测试号
+      status:
+      type:
+      mark: ''
+    - classId: 375
+      className: 美女一班
+      classCode: MVYB
+      startDate: 2021-03-27T00:00:00.000+0800
+      graduateDate: 2021-03-31T00:00:00.000+0800
+      adminId:
+      teacherName: 吴茁玲测试号
+      status:
+      type:
+      mark: ''
+    - classId: 379
+      className: 2021A
+      classCode: 2021A
+      startDate: 2021-03-27T00:00:00.000+0800
+      graduateDate: 2021-03-31T00:00:00.000+0800
+      adminId:
+      teacherName: 翠花
+      status:
+      type:
+      mark: ''
+    - classId: 378
+      className: 2021A
+      classCode: 2021A
+      startDate: 2021-03-27T00:00:00.000+0800
+      graduateDate: 20211000-03-31T00:00:00.000+0800
+      adminId:
+      teacherName: ??
+      status:
+      type:
+      mark: ''
+    - classId: 374
+      className: 2021A
+      classCode: 2021A
+      startDate: 2021-03-27T00:00:00.000+0800
+      graduateDate: 2021-03-31T00:00:00.000+0800
+      adminId:
+      teacherName: 翠花
+      status:
+      type:
+      mark: ''
+    - classId: 376
+      className: zkxclass2
+      classCode: zkxclass2
+      startDate: 2021-03-26T00:00:00.000+0800
+      graduateDate: 2021-03-29T00:00:00.000+0800
+      adminId:
+      teacherName: 张可欣测试号
+      status:
+      type:
+      mark: ''
+    - classId: 385
+      className: zkxclass2
+      classCode: zkxclass2
+      startDate: 2021-03-26T00:00:00.000+0800
+      graduateDate: 2021-03-29T00:00:00.000+0800
+      adminId:
+      teacherName: 张可欣测试号
+      status:
+      type:
+      mark: ''
+    - classId: 386
+      className: 测试开发班
+      classCode: testng
+      startDate: 2021-03-26T00:00:00.000+0800
+      graduateDate: 2021-03-26T00:00:00.000+0800
+      adminId:
+      teacherName: 李雷
+      status:
+      type:
+      mark: ''
+    - classId: 391
+      className: zkxclass2
+      classCode: zkxclass2
+      startDate: 2021-03-26T00:00:00.000+0800
+      graduateDate: 2021-03-29T00:00:00.000+0800
+      adminId:
+      teacherName: 张可欣测试号
+      status:
+      type:
+      mark: ''
+    - classId: 353
+      className: 周末实战班
+      classCode: GYP01
+      startDate: 2021-03-26T00:00:00.000+0800
+      graduateDate: 2021-03-31T00:00:00.000+0800
+      adminId:
+      teacherName: 吴令1233
+      status:
+      type:
+      mark: ''
+    - classId: 361
+      className: 周末实战班
+      classCode: GYP01
+      startDate: 2021-03-26T00:00:00.000+0800
+      graduateDate: 2021-03-31T00:00:00.000+0800
+      adminId:
+      teacherName: 吴令1233
+      status:
+      type:
+      mark: ''
+    - classId: 358
+      className: 周末实战班
+      classCode: GYP01
+      startDate: 2021-03-26T00:00:00.000+0800
+      graduateDate: 2021-03-31T00:00:00.000+0800
+      adminId:
+      teacherName: 吴令1233
+      status:
+      type:
+      mark: ''
+    - classId: 349
+      className: 周末实战班
+      classCode: GYP01
+      startDate: 2021-03-26T00:00:00.000+0800
+      graduateDate: 2021-03-31T00:00:00.000+0800
+      adminId:
+      teacherName: 吴令1233
+      status:
+      type:
+      mark: ''
+    - classId: 350
+      className: 周末实战班
+      classCode: GYP01
+      startDate: 2021-03-26T00:00:00.000+0800
+      graduateDate: 2021-03-31T00:00:00.000+0800
+      adminId:
+      teacherName: 吴令1233
+      status:
+      type:
+      mark: ''
+    - classId: 351
+      className: 周末实战班
+      classCode: GYP01
+      startDate: 2021-03-26T00:00:00.000+0800
+      graduateDate: 2021-03-31T00:00:00.000+0800
+      adminId:
+      teacherName: 吴令1233
+      status:
+      type:
+      mark: ''
+    - classId: 352
+      className: 周末实战班
+      classCode: GYP01
+      startDate: 2021-03-26T00:00:00.000+0800
+      graduateDate: 2021-03-31T00:00:00.000+0800
+      adminId:
+      teacherName: 吴令1233
+      status:
+      type:
+      mark: ''
+    - classId: 354
+      className: 周末实战班
+      classCode: GYP01
+      startDate: 2021-03-26T00:00:00.000+0800
+      graduateDate: 2021-03-31T00:00:00.000+0800
+      adminId:
+      teacherName: 吴令1233
+      status:
+      type:
+      mark: ''
+    - classId: 355
+      className: 周末实战班
+      classCode: GYP01
+      startDate: 2021-03-26T00:00:00.000+0800
+      graduateDate: 2021-03-31T00:00:00.000+0800
+      adminId:
+      teacherName: 吴令1233
+      status:
+      type:
+      mark: ''
+    - classId: 356
+      className: 周末实战班
+      classCode: GYP01
+      startDate: 2021-03-26T00:00:00.000+0800
+      graduateDate: 2021-03-31T00:00:00.000+0800
+      adminId:
+      teacherName: 吴令1233
+      status:
+      type:
+      mark: ''
+    - classId: 360
+      className: 周末实战班
+      classCode: GYP01
+      startDate: 2021-03-26T00:00:00.000+0800
+      graduateDate: 2021-03-31T00:00:00.000+0800
+      adminId:
+      teacherName: 吴令1233
+      status:
+      type:
+      mark: ''
+    - classId: 359
+      className: 周末实战班
+      classCode: GYP01
+      startDate: 2021-03-26T00:00:00.000+0800
+      graduateDate: 2021-03-31T00:00:00.000+0800
+      adminId:
+      teacherName: 吴令1233
+      status:
+      type:
+      mark: ''
+    - classId: 357
+      className: 周末实9c4战班
+      classCode: GYP01
+      startDate: 2021-03-26T00:00:00.000+0800
+      graduateDate: 2021-03-31T00:00:00.000+0800
+      adminId:
+      teacherName: 吴令1233
+      status:
+      type:
+      mark: ''
+    - classId: 348
+      className: 软件测试第1期
+      classCode: test01
+      startDate: 2021-03-25T00:00:00.000+0800
+      graduateDate: 2021-03-31T00:00:00.000+0800
+      adminId:
+      teacherName: 吴昊
+      status:
+      type:
+      mark: ''
+    - classId: 390
+      className: 超哥的测试账号
+      classCode: lacheln
+      startDate: 2021-03-01T00:00:00.000+0800
+      graduateDate: 2021-03-11T00:00:00.000+0800
+      adminId:
+      teacherName: 管理员
+      status:
+      type:
+      mark: ''
+    - classId: 387
+      className: leyh_1805测试开发班
+      classCode: leiyh_1805
+      startDate: 2021-03-01T00:00:00.000+0800
+      graduateDate: 2021-03-31T00:00:00.000+0800
+      adminId:
+      teacherName: leiyanghong
+      status:
+      type:
+      mark: ''
+    - classId: 370
+      className: leyh_1805测试开发班
+      classCode: leiyh_1805
+      startDate: 2021-03-01T00:00:00.000+0800
+      graduateDate: 2021-03-31T00:00:00.000+0800
+      adminId:
+      teacherName: leiyanghong
+      status:
+      type:
+      mark: ''
+    - classId: 384
+      className: 奥克斯11
+      classCode: AKS11
+      startDate: 2021-03-01T00:00:00.000+0800
+      graduateDate: 2021-03-02T00:00:00.000+0800
+      adminId:
+      teacherName: 吴彬
+      status:
+      type:
+      mark: ''
+    - classId: 383
+      className: 奥克斯11
+      classCode: AKS11
+      startDate: 2021-03-01T00:00:00.000+0800
+      graduateDate: 2021-03-02T00:00:00.000+0800
+      adminId:
+      teacherName: 吴彬
+      status:
+      type:
+      mark: ''
+    - classId: 377
+      className: 奥克斯11
+      classCode: AKS11
+      startDate: 2021-03-01T00:00:00.000+0800
+      graduateDate: 2021-03-02T00:00:00.000+0800
+      adminId:
+      teacherName: 吴彬
+      status:
+      type:
+      mark: ''
+    - classId: 381
+      className: ???11
+      classCode: AKS11
+      startDate: 2021-03-01T00:00:00.000+0800
+      graduateDate: 2021-03-02T00:00:00.000+0800
+      adminId:
+      teacherName: ??
+      status:
+      type:
+      mark: ''
+    - classId: 380
+      className: ???11
+      classCode: AKS11
+      startDate: 2021-03-01T00:00:00.000+0800
+      graduateDate: 2021-03-02T00:00:00.000+0800
+      adminId:
+      teacherName: ??
+      status:
+      type:
+      mark: ''
+    - classId: 382
+      className: ???11
+      classCode: AKS11
+      startDate: 2021-03-01T00:00:00.000+0800
+      graduateDate: 2021-03-02T00:00:00.000+0800
+      adminId:
+      teacherName: ??
+      status:
+      type:
+      mark: ''
+    pageNum: 1

@@ -1,0 +1,25 @@
+method: POST
+protocal: http
+ip: 192.168.1.103
+port: 80
+uri: /crmapi/admin/addTeacher
+query: {}
+encoding: UTF-8
+header:
+  addr: 上海市虹口区
+  UserID: '0'
+  ip: 124.77.86.126
+  Token: 5954bc3637eb4ce8aefa71afbd9d3d72
+  Content-Type: application/json;charset=UTF-8
+cookies:
+  ip: 124.77.86.126
+  addr: 上海市虹口区
+  UserID: '0'
+  Admin-Token: 5954bc3637eb4ce8aefa71afbd9d3d72
+  sidebarStatus: '1'
+body:
+  name: 吴开
+  username: wukai
+  paaword: 7a64d3bd06bc8e17d2100f846e719fd6
+  rule:
+  - teacher

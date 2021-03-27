@@ -1,0 +1,12 @@
+encoding: UTF-8
+status_code: '200'
+status_desc: ''
+header:
+  Content-Type: application/json;charset=UTF-8
+  Transfer-Encoding: chunked
+cookies: {}
+body:
+  code: 20000
+  msg: 操作成功
+  data:
+    token: 5954bc3637eb4ce8aefa71afbd9d3d72

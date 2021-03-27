@@ -1,0 +1,20 @@
+encoding: UTF-8
+status_code: '200'
+status_desc: ''
+header:
+  Content-Type: application/json;charset=UTF-8
+  Transfer-Encoding: chunked
+cookies: {}
+body:
+  code: 20000
+  msg: 操作成功
+  data:
+    classID: 0
+    roles:
+    - manager
+    - wikiM
+    - editor
+    - teacher
+    name: 管理员
+    avatar: https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif
+    userID: 0

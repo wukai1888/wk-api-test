@@ -1,0 +1,182 @@
+POST http://192.168.1.103/crmapi/user/login/admin HTTP/1.1
+Host: 192.168.1.103
+Connection: keep-alive
+Content-Length: 68
+addr: %E4%B8%8A%E6%B5%B7%E5%B8%82%E8%99%B9%E5%8F%A3%E5%8C%BA
+Accept: application/json, text/plain, */*
+ip: 124.77.86.126
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36
+Content-Type: application/json;charset=UTF-8
+Origin: http://192.168.1.103
+Referer: http://192.168.1.103/crmbg/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: ip=124.77.86.126; addr=%E4%B8%8A%E6%B5%B7%E5%B8%82%E8%99%B9%E5%8F%A3%E5%8C%BA; UserID=0; sidebarStatus=0
+
+{"username":"manager","password":"7a64d3bd06bc8e17d2100f846e719fd6"}
+HTTP/1.1 200
+Server: nginx/1.19.4
+Date: Sat, 27 Mar 2021 05:35:11 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Token
+
+57
+{"code":20000,"msg":"操作成功","data":{"token":"5954bc3637eb4ce8aefa71afbd9d3d72"}}
+0
+
+
+
+------------------------------------------------------------------
+
+GET http://192.168.1.103/crmapi/user/info?token=5954bc3637eb4ce8aefa71afbd9d3d72 HTTP/1.1
+Host: 192.168.1.103
+Connection: keep-alive
+addr: %E4%B8%8A%E6%B5%B7%E5%B8%82%E8%99%B9%E5%8F%A3%E5%8C%BA
+Accept: application/json, text/plain, */*
+UserID: 0
+ip: 124.77.86.126
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36
+Token: 5954bc3637eb4ce8aefa71afbd9d3d72
+Referer: http://192.168.1.103/crmbg/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: ip=124.77.86.126; addr=%E4%B8%8A%E6%B5%B7%E5%B8%82%E8%99%B9%E5%8F%A3%E5%8C%BA; UserID=0; sidebarStatus=0; Admin-Token=5954bc3637eb4ce8aefa71afbd9d3d72
+
+
+HTTP/1.1 200
+Server: nginx/1.19.4
+Date: Sat, 27 Mar 2021 05:35:11 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+
+d4
+{"code":20000,"msg":"操作成功","data":{"classID":0,"roles":["manager","wikiM","editor","teacher"],"name":"管理员","avatar":"https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif","userID":0}}
+0
+
+
+
+------------------------------------------------------------------
+
+POST http://192.168.1.103/crmapi/admin/addTeacher HTTP/1.1
+Host: 192.168.1.103
+Connection: keep-alive
+Content-Length: 100
+addr: %E4%B8%8A%E6%B5%B7%E5%B8%82%E8%99%B9%E5%8F%A3%E5%8C%BA
+Accept: application/json, text/plain, */*
+UserID: 0
+ip: 124.77.86.126
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36
+Token: 5954bc3637eb4ce8aefa71afbd9d3d72
+Content-Type: application/json;charset=UTF-8
+Origin: http://192.168.1.103
+Referer: http://192.168.1.103/crmbg/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: ip=124.77.86.126; addr=%E4%B8%8A%E6%B5%B7%E5%B8%82%E8%99%B9%E5%8F%A3%E5%8C%BA; UserID=0; Admin-Token=5954bc3637eb4ce8aefa71afbd9d3d72; sidebarStatus=1
+
+{"name":"吴开","username":"wukai","paaword":"7a64d3bd06bc8e17d2100f846e719fd6","rule":["teacher"]}
+HTTP/1.1 200
+Server: nginx/1.19.4
+Date: Sat, 27 Mar 2021 05:35:52 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Token
+
+2d
+{"code":20000,"msg":"操作成功","data":""}
+0
+
+
+
+------------------------------------------------------------------
+
+GET http://192.168.1.103/crmapi/admin/getClassForView?pageNum=1&pageSize=100 HTTP/1.1
+Host: 192.168.1.103
+Connection: keep-alive
+addr: %E4%B8%8A%E6%B5%B7%E5%B8%82%E8%99%B9%E5%8F%A3%E5%8C%BA
+Accept: application/json, text/plain, */*
+UserID: 0
+ip: 124.77.86.126
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36
+Token: 5954bc3637eb4ce8aefa71afbd9d3d72
+Referer: http://192.168.1.103/crmbg/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: ip=124.77.86.126; addr=%E4%B8%8A%E6%B5%B7%E5%B8%82%E8%99%B9%E5%8F%A3%E5%8C%BA; UserID=0; Admin-Token=5954bc3637eb4ce8aefa71afbd9d3d72; sidebarStatus=1
+
+
+HTTP/1.1 200
+Server: nginx/1.19.4
+Date: Sat, 27 Mar 2021 05:35:57 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+
+f30
+{"code":20000,"msg":"操作成功","data":{"total":45,"totalPage":1,"pageSize":100,"list":[{"classId":373,"className":"兰戎001班级","classCode":"LR_001班","startDate":"2021-03-31T00:00:00.000+0800","graduateDate":"2021-05-31T00:00:00.000+0800","adminId":null,"teacherName":"lanrong001","status":null,"type":null,"mark":""},{"classId":392,"className":"兰戎001班级","classCode":"LR_001班","startDate":"2021-03-31T00:00:00.000+0800","graduateDate":"2021-05-31T00:00:00.000+0800","adminId":null,"teacherName":"lanrong001","status":null,"type":null,"mark":""},{"classId":388,"className":"张001test班级","classCode":"zr班级","startDate":"2021-03-28T00:00:00.000+0800","graduateDate":"2021-03-28T00:00:00.000+0800","adminId":null,"teacherName":"张冉","status":null,"type":null,"mark":""},{"classId":371,"className":"2020A","classCode":"2020A","startDate":"2021-03-27T00:00:00.000+0800","graduateDate":"2021-03-31T00:00:00.000+0800","adminId":null,"teacherName":"翠花","status":null,"type":null,"mark":""},{"classId":362,"className":"阿斯蒂芬","classCode":"ASDFSD","startDate":"2021-03-27T00:00:00.000+0800","graduateDate":"2021-03-31T00:00:00.000+0800","adminId":null,"teacherName":"肖强","status":null,"type":null,"mark":""},{"classId":363,"className":"阿斯蒂芬","classCode":"ASDFSD","startDate":"2021-03-27T00:00:00.000+0800","graduateDate":"2021-03-31T00:00:00.000+0800","adminId":null,"teacherName":"肖强","status":null,"type":null,"mark":""},{"classId":364,"className":"阿斯蒂芬","classCode":"ASDFSD","startDate":"2021-03-27T00:00:00.000+0800","graduateDate":"2021-03-31T00:00:00.000+0800","adminId":null,"teacherName":"肖强","status":null,"type":null,"mark":""},{"classId":368,"className":"果芽123","classCode":"GY123","startDate":"2021-03-27T00:00:00.000+0800","graduateDate":"2021-03-30T00:00:00.000+0800","adminId":null,"teacherName":"肖强","status":null,"type":null,"mark":""},{"classId":365,"className":"阿斯蒂芬","classCode":"ASDFSD","startDate":"2021-03-27T00:00:00.000+0800","graduateDate":"2021-03-31T00:00:00.000+0800","adminId":null,"teacherName":"肖强","status":null,"type":null,"mark":""},{"classId":366,"className":"阿斯蒂芬","classCode":"ASDFSD","startDate":"2021-03-27T00:00:00.000+0800","graduateDate":"2021-03-31T00:00:00.000+0800","adminId":null,"teacherName":"肖强","status":null,"type":null,"mark":""},{"classId":367,"className":"阿斯蒂芬","classCode":"ASDFSD","startDate":"2021-03-27T00:00:00.000+0800","graduateDate":"2021-03-31T00:00:00.000+0800","adminId":null,"teacherName":"肖强","status":null,"type":null,"mark":""},{"classId":372,"className":"zkx0327class","classCode":"0327class","startDate":"2021-03-27T00:00:00.000+0800","graduateDate":"2021-03-28T00:00:00.000+0800","adminId":null,"teacherName":"张可欣测试号","status":null,"type":null,"mark":""},{"classId":369,"className":"美女一班","classCode":"MVYB","startDate":"2021-03-27T00:00:00.000+0800","graduateDate":"2021-03-31T00:00:00.000+0800","adminId":null,"teacherName":"吴茁玲测试号","status":null,"type":null,"mark":""},{"classId":389,"className":"黄曼班级","classCode":"hmclass","startDate":"2021-03-27T00:00:00.000+0800","graduateDate":"2021-03-27T00:00:00.000+0800","adminId":null,"teacherName":"hm测试号","status":null,"type":null,"mark":""},{"classId":375,"className":"美女一班","classCode":"MVYB","startDate":"2021-03-27T00:00:00.000+0800","graduateDate":"2021-03-31T00:00:00.000+0800","adminId":null,"teacherName":"吴茁玲测试号","status":null,"type":null,"mark":""},{"classId":379,"className":"2021A","classCode":"2021A","startDate":"2021-03-27T00:00:00.000+0800","graduateDate":"2021-03-31T00:00:00.000+0800","adminId":null,"teacherName":"翠花","status":null,"type":null,"mark":""},{"classId":378,"className":"2021A","classCode":"2021A","startDate":"2021-03-27T00:00:00.000+0800","graduateDate":"2021
+1000
+-03-31T00:00:00.000+0800","adminId":null,"teacherName":"??","status":null,"type":null,"mark":""},{"classId":374,"className":"2021A","classCode":"2021A","startDate":"2021-03-27T00:00:00.000+0800","graduateDate":"2021-03-31T00:00:00.000+0800","adminId":null,"teacherName":"翠花","status":null,"type":null,"mark":""},{"classId":376,"className":"zkxclass2","classCode":"zkxclass2","startDate":"2021-03-26T00:00:00.000+0800","graduateDate":"2021-03-29T00:00:00.000+0800","adminId":null,"teacherName":"张可欣测试号","status":null,"type":null,"mark":""},{"classId":385,"className":"zkxclass2","classCode":"zkxclass2","startDate":"2021-03-26T00:00:00.000+0800","graduateDate":"2021-03-29T00:00:00.000+0800","adminId":null,"teacherName":"张可欣测试号","status":null,"type":null,"mark":""},{"classId":386,"className":"测试开发班","classCode":"testng","startDate":"2021-03-26T00:00:00.000+0800","graduateDate":"2021-03-26T00:00:00.000+0800","adminId":null,"teacherName":"李雷","status":null,"type":null,"mark":""},{"classId":391,"className":"zkxclass2","classCode":"zkxclass2","startDate":"2021-03-26T00:00:00.000+0800","graduateDate":"2021-03-29T00:00:00.000+0800","adminId":null,"teacherName":"张可欣测试号","status":null,"type":null,"mark":""},{"classId":353,"className":"周末实战班","classCode":"GYP01","startDate":"2021-03-26T00:00:00.000+0800","graduateDate":"2021-03-31T00:00:00.000+0800","adminId":null,"teacherName":"吴令1233","status":null,"type":null,"mark":""},{"classId":361,"className":"周末实战班","classCode":"GYP01","startDate":"2021-03-26T00:00:00.000+0800","graduateDate":"2021-03-31T00:00:00.000+0800","adminId":null,"teacherName":"吴令1233","status":null,"type":null,"mark":""},{"classId":358,"className":"周末实战班","classCode":"GYP01","startDate":"2021-03-26T00:00:00.000+0800","graduateDate":"2021-03-31T00:00:00.000+0800","adminId":null,"teacherName":"吴令1233","status":null,"type":null,"mark":""},{"classId":349,"className":"周末实战班","classCode":"GYP01","startDate":"2021-03-26T00:00:00.000+0800","graduateDate":"2021-03-31T00:00:00.000+0800","adminId":null,"teacherName":"吴令1233","status":null,"type":null,"mark":""},{"classId":350,"className":"周末实战班","classCode":"GYP01","startDate":"2021-03-26T00:00:00.000+0800","graduateDate":"2021-03-31T00:00:00.000+0800","adminId":null,"teacherName":"吴令1233","status":null,"type":null,"mark":""},{"classId":351,"className":"周末实战班","classCode":"GYP01","startDate":"2021-03-26T00:00:00.000+0800","graduateDate":"2021-03-31T00:00:00.000+0800","adminId":null,"teacherName":"吴令1233","status":null,"type":null,"mark":""},{"classId":352,"className":"周末实战班","classCode":"GYP01","startDate":"2021-03-26T00:00:00.000+0800","graduateDate":"2021-03-31T00:00:00.000+0800","adminId":null,"teacherName":"吴令1233","status":null,"type":null,"mark":""},{"classId":354,"className":"周末实战班","classCode":"GYP01","startDate":"2021-03-26T00:00:00.000+0800","graduateDate":"2021-03-31T00:00:00.000+0800","adminId":null,"teacherName":"吴令1233","status":null,"type":null,"mark":""},{"classId":355,"className":"周末实战班","classCode":"GYP01","startDate":"2021-03-26T00:00:00.000+0800","graduateDate":"2021-03-31T00:00:00.000+0800","adminId":null,"teacherName":"吴令1233","status":null,"type":null,"mark":""},{"classId":356,"className":"周末实战班","classCode":"GYP01","startDate":"2021-03-26T00:00:00.000+0800","graduateDate":"2021-03-31T00:00:00.000+0800","adminId":null,"teacherName":"吴令1233","status":null,"type":null,"mark":""},{"classId":360,"className":"周末实战班","classCode":"GYP01","startDate":"2021-03-26T00:00:00.000+0800","graduateDate":"2021-03-31T00:00:00.000+0800","adminId":null,"teacherName":"吴令1233","status":null,"type":null,"mark":""},{"classId":359,"className":"周末实战班","classCode":"GYP01","startDate":"2021-03-26T00:00:00.000+0800","graduateDate":"2021-03-31T00:00:00.000+0800","adminId":null,"teacherName":"吴令1233","status":null,"type":null,"mark":""},{"classId":357,"className":"周末实
+9c4
+战班","classCode":"GYP01","startDate":"2021-03-26T00:00:00.000+0800","graduateDate":"2021-03-31T00:00:00.000+0800","adminId":null,"teacherName":"吴令1233","status":null,"type":null,"mark":""},{"classId":348,"className":"软件测试第1期","classCode":"test01","startDate":"2021-03-25T00:00:00.000+0800","graduateDate":"2021-03-31T00:00:00.000+0800","adminId":null,"teacherName":"吴昊","status":null,"type":null,"mark":""},{"classId":390,"className":"超哥的测试账号","classCode":"lacheln","startDate":"2021-03-01T00:00:00.000+0800","graduateDate":"2021-03-11T00:00:00.000+0800","adminId":null,"teacherName":"管理员","status":null,"type":null,"mark":""},{"classId":387,"className":"leyh_1805测试开发班","classCode":"leiyh_1805","startDate":"2021-03-01T00:00:00.000+0800","graduateDate":"2021-03-31T00:00:00.000+0800","adminId":null,"teacherName":"leiyanghong","status":null,"type":null,"mark":""},{"classId":370,"className":"leyh_1805测试开发班","classCode":"leiyh_1805","startDate":"2021-03-01T00:00:00.000+0800","graduateDate":"2021-03-31T00:00:00.000+0800","adminId":null,"teacherName":"leiyanghong","status":null,"type":null,"mark":""},{"classId":384,"className":"奥克斯11","classCode":"AKS11","startDate":"2021-03-01T00:00:00.000+0800","graduateDate":"2021-03-02T00:00:00.000+0800","adminId":null,"teacherName":"吴彬","status":null,"type":null,"mark":""},{"classId":383,"className":"奥克斯11","classCode":"AKS11","startDate":"2021-03-01T00:00:00.000+0800","graduateDate":"2021-03-02T00:00:00.000+0800","adminId":null,"teacherName":"吴彬","status":null,"type":null,"mark":""},{"classId":377,"className":"奥克斯11","classCode":"AKS11","startDate":"2021-03-01T00:00:00.000+0800","graduateDate":"2021-03-02T00:00:00.000+0800","adminId":null,"teacherName":"吴彬","status":null,"type":null,"mark":""},{"classId":381,"className":"???11","classCode":"AKS11","startDate":"2021-03-01T00:00:00.000+0800","graduateDate":"2021-03-02T00:00:00.000+0800","adminId":null,"teacherName":"??","status":null,"type":null,"mark":""},{"classId":380,"className":"???11","classCode":"AKS11","startDate":"2021-03-01T00:00:00.000+0800","graduateDate":"2021-03-02T00:00:00.000+0800","adminId":null,"teacherName":"??","status":null,"type":null,"mark":""},{"classId":382,"className":"???11","classCode":"AKS11","startDate":"2021-03-01T00:00:00.000+0800","graduateDate":"2021-03-02T00:00:00.000+0800","adminId":null,"teacherName":"??","status":null,"type":null,"mark":""}],"pageNum":1}}
+0
+
+
+
+------------------------------------------------------------------
+
+POST http://192.168.1.103/crmapi/admin/stu/queryStuList?pageNum=1&pageSize=10 HTTP/1.1
+Host: 192.168.1.103
+Connection: keep-alive
+Content-Length: 255
+addr: %E4%B8%8A%E6%B5%B7%E5%B8%82%E8%99%B9%E5%8F%A3%E5%8C%BA
+Accept: application/json, text/plain, */*
+UserID: 0
+ip: 124.77.86.126
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36
+Token: 5954bc3637eb4ce8aefa71afbd9d3d72
+Content-Type: application/json;charset=UTF-8
+Origin: http://192.168.1.103
+Referer: http://192.168.1.103/crmbg/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: ip=124.77.86.126; addr=%E4%B8%8A%E6%B5%B7%E5%B8%82%E8%99%B9%E5%8F%A3%E5%8C%BA; UserID=0; Admin-Token=5954bc3637eb4ce8aefa71afbd9d3d72; sidebarStatus=1
+
+{"className":"","classId":0,"stuId":0,"stuName":"","age1":0,"age2":0,"cert":"","province":"","city":"","education":"","feeUnpayed":0,"feePayed":0,"badDebt":0,"discountsName":"","phone":"","discountsAmount":0,"employmentType":"","homeAddr":"","comAddr":""}
+HTTP/1.1 200
+Server: nginx/1.19.4
+Date: Sat, 27 Mar 2021 05:36:01 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Token
+
+68
+{"code":20000,"msg":"操作成功","data":{"total":0,"totalPage":0,"pageSize":10,"list":[],"pageNum":0}}
+0
+
+
+
+------------------------------------------------------------------
+
